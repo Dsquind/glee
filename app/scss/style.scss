@@ -36,6 +36,14 @@
 
 .user-nav{
   display: flex;
+  &::after{
+  content: "";
+  position: relative;
+  border-right: 1px solid #fde7d3;
+  top: 9px;
+  right: 162px;
+  height: 32px;
+  }
   &__link{
     position: relative;
     &:nth-child(1){
@@ -83,7 +91,7 @@
     }
   }
 
-  &__num__like{
+  &__num__like, &__num__coat{
     position: absolute;
     width: 16px;
     height: 16px;
@@ -99,28 +107,8 @@
   }
 
   &__num__coat{
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #fff;
-    top:12px;
     right: 36px;
-    text-align: center;
-    font-size: 10px;
-    line-height: 15px;
-    color: $default;
-    @extend %dmsans-400;
   }
-}
-
-.user-nav::after{
-  content: "";
-  position: relative;
-  border-right: 1px solid #fde7d3;
-  top: 9px;
-  right: 162px;
-  height: 32px;
 }
 
 
