@@ -52,6 +52,10 @@
       height: 50px;
       border-radius: 50%;
       background-position: center;
+      transition: all .5s;
+      &:hover{
+        background-color: #a3bbc8;
+      }
     }
     &:nth-child(2){
       background-color: #fcd7b6;
@@ -69,26 +73,31 @@
     
     &:nth-child(4){
       margin-left: 20px;
-      background-color: $default;
+      background-color: #edf1f4;
       width: 50px;
       height: 50px;
       border-radius: 50%;
+      transition: all .5s;
+      &:hover{
+        background-color: #a3bbc8;
+      }
     }
   }
   
-  &__link-img{
-    &__search{
-      margin: 17px auto;
+  &__link{
+    &-like{
+      width: 19px;
+      height: 17px;
+      margin-left: 40px;
+      margin-top: 16px;
     }
-    &__like{
-      margin: 22px 30px 12px 40px;
-      }
-    &__coat{
-      margin: 21px 42px 13px 27px;
+    &-coat{
+      width: 19px;
+      height: 17px;
+      margin-left: 27px;
+      margin-top: 16px;
     }
-    &__thrid{
-      margin: 15px 15px;
-    }
+
   }
 
   &__num__like, &__num__coat{
@@ -97,18 +106,153 @@
     height: 16px;
     border-radius: 50%;
     background-color: #fff;
-    top:12px;
-    right: 24px;
+    top:7px;
+    right: 22px;
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 15px;
     color: $default;
     @extend %dmsans-400;
   }
-
   &__num__coat{
     right: 36px;
   }
+  &__link svg{
+    fill: $default;
+    transition: all .5s;
+    &:hover{
+      fill: white;
+    }
+  }
+}
+
+
+.footer-top{
+  padding: 70px 0 70px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  &__contact{
+    width: 200px;
+    margin-right: 100px;
+  }
+  &__nav{
+    width: 200px;
+    margin-right: 100px;
+  }
+  &__item-form{
+    max-width: 270px;
+  }
+  &__logo{
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  &__adress{
+   font-size: 14px;
+   line-height: 24px;
+   display: block;
+   margin-bottom: 20px;
+  }
+
+  &__title{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #1f2044;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 17px;
+    @extend %dmsans-700;
+  }
+
+  &__text{
+    font-size: 14px;
+    line-height: 24px;
+    color: #7b7b7b;
+    margin-bottom: 35px;
+  }
+
+  &__form{
+    display: flex;
+  }
+
+  &__form-input{
+    background-color: #fef7f0;
+    max-width: 170px;
+    min-height: 38px;
+    width: 100%;
+    border: none;
+    padding: 0 15px;
+    color: #234969;
+    font-size: 12px;
+    &::placeholder{
+      color: #234969;
+      @extend %dmsans-400;
+      font-size: 12px;
+    }
+    &:focus{
+      outline:1px solid rgba(163,187,200,0.3)
+    }
+  }
+
+  &__form-btn{
+    border: none;
+    cursor: pointer;
+    background-color: #a3bbc8;
+    color: white;
+    max-width: 100px;
+    width: 100%;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 21px;
+    @extend %dmsans-400;
+    transition: all 0.3s;
+    &:hover{
+      background-color: #234969;
+    }
+  }
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+  &__copy{
+    font-size: 14px;
+    line-height: 32px; 
+    @extend %rubik-400;
+    color: #7b7b7b;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__slash + &__slash{
+    margin-left: 30px;
+  }
+  &__item{
+    position: relative;
+  }
+  &__slash:not(:last-child)::before{
+    content: '';
+    position: absolute;
+    background-color: #7b7b7b;
+    width: 1px;
+    height: 17px;
+    right: -15px;
+    top: 8px;
+  }
+  &__link{
+    transition: all 0.3s;
+  }
+  &__link:hover{
+    color: #191919;
+  }
+}
+
+.footer-bottom--active{
+  color: #191919;
 }
 
 
