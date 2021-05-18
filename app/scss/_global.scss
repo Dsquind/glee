@@ -12,9 +12,11 @@ body{
  display: flex;
  flex-direction: column;
 }
+
 .main{
   flex-grow: 1;
 }
+
 a{
   font-size: 14px;
   line-height: 32px;
@@ -28,7 +30,7 @@ a{
   padding: 0 15px;
 }
 
-.container__content{
+.container-content{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
