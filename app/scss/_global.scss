@@ -25,13 +25,13 @@ a{
 }
 
 .container{
-  max-width: 1800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .container-content{
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -39,7 +39,7 @@ a{
 .title{
   font-size: 36px;
   margin-bottom: 30px;
-  color: $title;
+  color: $default;
   @extend %dmsans-700;
 }
 
