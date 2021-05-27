@@ -872,6 +872,12 @@
   bottom: 15px;
   background-color: #fef7f0;
   z-index: -1;
+  &__nonnews{
+    margin-top: 0;
+    padding: 70px 0 70px;
+    min-height: 250px;
+    background-color: #fef7f0;
+  }
   &__items{
     display: flex;
     justify-content: space-around;
@@ -1165,6 +1171,76 @@
     right: 10px;
   }
 }
+
+.login__btn,
+.login__link{
+  display: block;
+  padding: 20px 0;
+  font-size: 18px;
+  line-height: 1;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  border: none;
+  @extend %rubik-500;
+  &:hover{
+    background-color: $main;
+  }
+}
+
+.login{
+  padding: 117px 0 136px;
+  &__block{
+    margin: 0 auto;
+    max-width: 470px;
+    width: 100%;
+  }
+  &__text{
+    display: block;
+    margin-bottom: 30px;
+    color: $main;
+    font-size: 14px;
+    @extend %rubik-400;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    margin-top: 5px;
+    height: 60px;
+    padding: 0 15px;
+    &:focus{
+      outline:1px solid rgba(163,187,200,0.3)
+    }
+  }
+  &__btn{
+    margin-top: 45px;
+    margin-bottom: 32px;
+    background-color: #a3bbc8;
+    color: white;
+  }
+  &__under{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text--problem{
+    margin-bottom: 20px;
+    padding-top: 30px;
+    text-align: center;
+    border-top: 2px solid #f6f6f6;
+  }
+  &__link{
+    border: 2px solid #a3bbc8;
+    color: $default;
+    text-align: center;
+    &:hover{
+      border: 2px solid white;
+      color: white;
+    }
+  }
+}
+
+
 
 
 
