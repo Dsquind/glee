@@ -21,7 +21,7 @@
               <a  class="menu__list-link" href="index.html">Home +</a>
             </li>
             <li class="menu__list-item">
-              <a  class="menu__list-link menu__list-link--active" href="page.html">About</a>
+              <a  class="menu__list-link" href="page.html">About</a>
             </li>
             <li class="menu__list-item">
               <a  class="menu__list-link" href="#">Services</a>
@@ -75,104 +75,51 @@
   <main class="main">
     <div class="top">
       <div class="container">
-        <h1 class="top__title"> About Us</h1>
+        <h1 class="top__title">Log in</h1>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
                <a class="breadcrumbs__link" href="index.html">Home</a> 
             </li>
             <li class="breadcrumbs__item">
-               <a class="breadcrumbs__link" href="#">About Us</a> 
+               <a class="breadcrumbs__link" href="#">Log in</a> 
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-
-    <section class="articles">
-      <div class="container">
-        <div class="articles__top">
-          <h2 class="title articles__title">Our Insights & Articles</h2>
-          <a class="articles__link">View All</a>
-        </div>
-        <div class="articles__items">
-          <div class="articles__item">
-            <div class="articles__item-zoom">
-              <a class="articles__item-link" href="#">
-                <img class="articles__item-img" src="images/news/item1.jpg" alt="phote news">
-              </a>
-            </div>
-            <div class="articles__inner">
-              <div class="articles__inner-content">
-                <span class="articles__inner-btn">NEWS</span>
-                <a href="#" class="articles__inner-text">
-                  Diusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam
+    <section class="login">
+       <div class="container">
+          <div class="login__block">
+            <form class="login__form" action="#">
+              <label class="login__text">Username or email address*
+                <input class="login__input" type="text" required>
+              </label>
+              <label class="login__text">
+                Password*
+                <input class="login__input" type="password" required>
+              </label>
+              <button class="login__btn" type="submit">Login</button>
+              <div class="login__under">
+                <label class="login__text">
+                  <input type="checkbox">
+                  Remember me
+                </label>
+                <a class="login__text" href="#">
+                  Lost your password?
                 </a>
               </div>
-              <div class="articles__inner-info">
-                <span class="articles__inner-data">
-                  28 January, 2020
-                </span>
-                <span class="articles__inner-author">
-                  BY ADMIN
-                </span>
-              </div>
-            </div>
+            </form>
+            <span class="login__text login__text--problem">Not registered? No problem</span>
+            <a class="login__link" href="#">Create an account</a>
           </div>
-          <div class="articles__item">
-            <div class="articles__item-zoom">
-              <a class="articles__item-link" href="#">
-                <img class="articles__item-img" src="images/news/item2.jpg" alt="phote news">
-              </a>
-            </div>
-            <div class="articles__inner">
-              <div class="articles__inner-content">
-                <span class="articles__inner-btn">NEWS</span>
-                <a href="#" class="articles__inner-text">
-                  Aonsectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore
-                </a>
-              </div>
-              <div class="articles__inner-info">
-                <span class="articles__inner-data">
-                  28 January, 2020
-                </span>
-                <span class="articles__inner-author">
-                  BY ADMIN
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="articles__item">
-            <div class="articles__item-zoom">
-              <a class="articles__item-link" href="#">
-                <img class="articles__item-img" src="images/news/item3.jpg" alt="phote news">
-              </a>
-            </div>
-            <div class="articles__inner">
-              <div class="articles__inner-content">
-                <span class="articles__inner-btn">NEWS</span>
-                <a href="#" class="articles__inner-text">
-                  Rncididunt ut labore et dolore magna aliqua.
-                  Ut enim
-                </a>
-              </div>
-              <div class="articles__inner-info">
-                <span class="articles__inner-data">
-                  28 January, 2020
-                </span>
-                <span class="articles__inner-author">
-                  BY ADMIN
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+       </div>
     </section>
-    <div class="partners">
+
+
+   
+    <div class="partners partners__nonnews">
       <div class="container">
         <div class="partners__items">
           <img class="partners__items-img" src="images/partners/item1.png" alt="logo partners">
