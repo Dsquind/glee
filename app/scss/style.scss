@@ -1241,6 +1241,47 @@
 }
 
 
+.terms{
+  padding: 115px 0px 115px 0;
+  color: #243f4d;
+  &__content h2{
+    margin-bottom: 22px;
+    font-size: 24px;
+    @extend %rubik-500;
+  }
+  &__content ol{
+    margin-bottom: 62px;
+    display: block;
+    list-style-type: none;
+    counter-reset: item;
+    padding: 0;
+  }
+  &__content li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px;
+  }
+  &__content p{
+    margin-bottom: 52px;
+  }
+  &__content li,
+  &__content p{
+    font-size: 16px;
+    line-height: 1.9;
+    @extend %rubik-400;
+  }
+}
+.terms__content li:nth-child(-n+9)::before {
+  content: "0" counter(item) ".";
+}
+.terms__content li:nth-child(-n+9)::before, .terms__content li:nth-child(n+10)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  counter-increment: item;
+}
+
+
 
 
 
