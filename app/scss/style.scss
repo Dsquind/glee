@@ -31,11 +31,11 @@
     transition: all .5s;
     @extend %rubik-500;
     &:hover{
-      color: $default;
+      color: #A3BBC8;
     }
   }
   &__list-link--active{
-    color: $default;
+    color: #A3BBC8;
   }
 }
 
@@ -128,6 +128,47 @@
     &:hover{
       fill: white;
     }
+  }
+}
+
+.top{
+  background-color: #edf1f4;
+  padding: 24px 0 24px;
+  &__title{
+    margin-bottom: 7px;
+    font-size: 36px;
+    line-height: 1;
+    color: #222933;
+    text-align: center;
+    @extend %rubik-400;
+  }
+}
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding-right: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #222933;
+    @extend %rubik-400;
+  }
+   &__item:last-child{
+    padding-right: 0;
+    &::after{
+      display: none;
+    }
+  }
+  &__item::after{
+    content: '/';
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    color: #7b7b7b;
   }
 }
 
@@ -531,10 +572,8 @@
     margin-top: 30px;
     position: relative;
     transition: all .5s;
-    
   }
 
-  
   &__link:hover{
    background-color: $cream;
    box-shadow: 2px 2px 2px 2px rgba(73, 66, 66, 0.05);
@@ -844,6 +883,289 @@
     object-fit: cover;
   }
 }
+
+.about .about__board{
+  padding-top: 37px;
+  display: flex;
+  border-top: 2px solid rgba(9,49,111,0.102);
+  max-width: 530px;
+  justify-content: space-around;
+}
+.about{
+  padding: 120px 0;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img{
+    max-width: 570px;
+    width: 100%;
+    max-height: 670px;
+    margin-right: 20px;
+  }
+  &__content{
+    padding: 83px 0 0 18px;
+    color: $default;
+  }
+  &__lead{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__num{
+    margin-right: 23px;
+    font-size: 140px;
+    line-height: 100px;
+    color: #a3bbc8;
+    @extend %rubik-700;
+  }
+  &__comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 16px;
+    line-height: 0.9;
+    & span+span{
+      margin-top: 18px;
+    }
+  }
+  &__title{
+    color: $default;
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  &__text{
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  &__list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 36px;
+    @extend %dmsans-700;
+    & span{
+      font-size: 16px;
+      color: #4c4c4c;
+    }
+    & svg{
+      fill: #a3bbc8;
+      position: absolute;
+    }
+  }
+  &__note{
+    width: 37px;
+    height: 38px;
+    left: 0;
+    top: 5px;
+  }
+  &__mega{
+    width: 44px;
+    height: 40px;
+    left: 27px;
+    top: 4px;
+  }
+  &__award{
+    width: 43px;
+    height: 42px;
+    left: 25px;
+    top: 4px;
+  }
+  &__list-note{
+    width: 170px;
+    padding-left: 55px;
+  }
+  &__list-mega{
+    width: 200px;
+    border-right: 1px solid rgba(9,49,111,0.102);
+    border-left: 1px solid rgba(9,49,111,0.102);
+    padding-left: 90px;
+  }
+  &__list-award{
+    width: 160px;
+    padding-left: 90px;
+  }
+}
+
+.advantages .advantages__items{
+  display: flex;
+  justify-content: space-around;
+  padding: 82px 0 80px;
+  align-items: center;
+}
+.advantages .advantages__deliv{
+  margin-top: 13px;
+  margin-bottom: 0;
+}
+.advantages{
+  background-color: $cream;
+  &__item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:  center;
+    z-index: 1;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 33px;
+      height: 33px;
+      right: 42px;
+      top: 29px;
+      background-color: #a3bbc8;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+  svg{
+    fill: #243f4d;
+    width: 67px;
+    height: 65px;
+    margin-bottom: 13px;
+  }
+  &__stats{
+    display: block;
+    font-size: 36px;
+    text-align: center;
+    @extend %dmsans-700;
+  }
+  &__text{
+    font-size: 18px;
+    margin-top: 15px;
+    display: block;
+    @extend %dmsans-700;
+  }
+}
+
+.team{
+  padding: 120px 0 190px 0;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 370px;
+  }
+  &__title{
+    color: $default;
+  }
+  &__text{
+    font-size: 16px;
+    width: 305px;
+    margin-bottom: 40px;
+  }
+  &__link{
+    position: relative;
+    padding: 15px 60px 15px 20px;
+    color: white;
+    background-color: #a3bbc8;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    @extend %dmsans-700;
+    &:hover{
+      background-color: $main;
+    }
+  }
+  &__arrow-right{
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    fill: white;
+    top: 18px;
+    right: 24px;
+  }
+  &__board{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 100px 30px;
+  }
+  &__person{
+    position: relative;
+    min-height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 1s;
+    filter: grayscale(70%);
+    &:hover{
+      filter: grayscale(0%);
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+  &__profile{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px 31px 24px;
+    background-color: #fff;
+    max-width: 325px;
+    width: 100%;
+    bottom: -60px;
+    left: -1px;
+    box-shadow: 0px 6px 57px 0px rgba(37,37,37,0.05);
+  }
+  &__name{
+    font-size: 22px;
+    color: $main;
+    @extend %dmsans-700;
+  }
+  &__skill{
+    font-size: 16px;
+    color: #565872;
+    @extend %rubik-400;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+  }
+  &__icon{
+    position: relative;
+    z-index: 1;
+    & svg{
+      position: absolute;
+      fill: #888;
+    }
+  }
+  &__icon--inst::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    z-index: -1;
+    top: -20px;
+    right: 51px;
+  }
+  &__icon--google::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    z-index: -1;
+    top: -20px;
+    right: 3px;
+  }
+  &__instagram{
+    width: 18px;
+    height: 18px;
+    top: -9px;
+    right: 62px;
+  }
+  &__google{
+    width: 23px;
+    height: 23px;
+    top: -12px;
+    right: 10px;
+  }
+}
+
 
 
 
