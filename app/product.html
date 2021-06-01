@@ -27,7 +27,7 @@
               <a  class="menu__list-link" href="#">Services</a>
             </li>
             <li class="menu__list-item">
-              <a  class="menu__list-link" href="product.html">Pages +</a>
+              <a  class="menu__list-link menu__list-link--active" href="product.html">Pages +</a>
             </li>
             <li class="menu__list-item">
               <a  class="menu__list-link" href="#">News</a>
@@ -75,22 +75,122 @@
   <main class="main">
     <div class="top">
       <div class="container">
-        <h1 class="top__title">Log in</h1>
+        <h1 class="top__title">Product list 1</h1>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
                <a class="breadcrumbs__link" href="index.html">Home</a> 
             </li>
             <li class="breadcrumbs__item">
-               <a class="breadcrumbs__link" href="#">Log in</a> 
+               <a class="breadcrumbs__link" href="#">Product list 1</a> 
             </li>
           </ul>
         </div>
       </div>
     </div>
 
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <div class="shop__filters">
+            <div class="filter__item filter-insur">
+              <span class="shop__title shop__title-category">CATEGORY</span>
+              <ul class="shop__items">
+                <li class="shop__list">
+                  <button class="shop__category shop__category--active" type="button"> Chair</button>
+                </li>
+                <li class="shop__list">
+                  <button class="shop__category" type="button">Table</button>
+                </li>
+                <li class="shop__list">
+                  <button class="shop__category" type="button">Lamp</button>
+                </li>
+                <li class="shop__list">
+                  <button class="shop__category" type="button">Watch</button>
+                </li>
+                <li class="shop__list">
+                  <button class="shop__category" type="button">Clock</button>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__item filter-price">
+              <span class="shop__title shop__title-price">Price</span>
+              <form  class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0" data-max="1000" data-from="100" data-to="500">
+                <label class="filter-price__mark">
+                  <span>$<span class="filter-price__from"></span></span>
+                  <span>$<span class="filter-price__to"></span></span>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item filter-insur">
+              <span class="shop__title shop__title-brand">BRAND</span>
+              <ul class="shop__items">
+                <li class="shop__list">
+                  <button class="shop__category-brand shop__category-brand--active" type="button">RFL <span class="shop__asembl shop__asembl--active">(10)</span></button>
+                </li>
+                <li class="shop__list">
+                  <button class="shop__category-brand" type="button">Brothers <span class="shop__asembl">(21)</span></button>
+                </li>
+                <li class="shop__list">
+                  <button class="shop__category-brand" type="button">Regal<span class="shop__asembl">(3)</span></button>
+                </li>
+                <li class="shop__list">
+                  <button class="shop__category-brand" type="button">Nadia<span class="shop__asembl">(14)</span></button>
+                </li>
+                <li class="shop__list">
+                  <button class="shop__category-brand" type="button">Otobi<span class="shop__asembl">(6)</span></button>
+                </li>
+              </ul>
+            </div>
+            <div class="shop__recent">
+              <span class="shop__title shop__title-recent">RECENT PRODUCTS</span>
+              <div class="shop__recent-card">
+                <a class="shop__recent-link" href="#">
+                  <img class="shop__recent-image" src="images/shop/item1.png" alt="photo item">
+                </a>
+                <div class="shop__recent-content">
+                  <h5 class="shop__recent-title">Pendant lamp</h5>
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <span class="shop__recent-price">23$</span>
+                </div>
+              </div>
+              <div class="shop__recent-card">
+                <a class="shop__recent-link" href="#">
+                  <img class="shop__recent-image" src="images/shop/item2.png" alt="photo item">
+                </a>
+                <div class="shop__recent-content">
+                  <h5 class="shop__recent-title">Pendant lamp</h5>
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <span class="shop__recent-price">23$</span>
+                </div>
+              </div>
+              <div class="shop__recent-card">
+                <a class="shop__recent-link" href="#">
+                  <img class="shop__recent-image" src="images/shop/item3.png" alt="photo item">
+                </a>
+                <div class="shop__recent-content">
+                  <h5 class="shop__recent-title">Pendant lamp</h5>
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <span class="shop__recent-price">23$</span>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="shop__content">
+
+          </div>
+        </div>
+      </div>
+    </section>
     
 
+
+
+   
     <div class="partners partners__nonnews">
       <div class="container">
         <div class="partners__items">
@@ -127,7 +227,7 @@
         </h6>
         <ul class="footer-top__list">
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">About us</a>
+            <a class="footer-top__link" href="page.html">About us</a>
           </li>
           <li class="footer-top__item">
             <a class="footer-top__link" href="#">Return Policy</a>
@@ -139,7 +239,7 @@
             <a class="footer-top__link" href="#">Contact Us</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">Terms & Condition</a>
+            <a class="footer-top__link" href="terms.html">Terms & Condition</a>
           </li>
         </ul>
       </div>
@@ -155,7 +255,7 @@
             <a class="footer-top__link" href="#">Checkout</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">Login</a>
+            <a class="footer-top__link" href="login.html">Login</a>
           </li>
           <li class="footer-top__item">
             <a class="footer-top__link" href="#">Register</a>
@@ -182,10 +282,10 @@
         </p>
         <ul class="footer-bottom__list">
           <li class="footer-bottom__item footer-bottom__slash">
-            <a class="footer-bottom__link footer-bottom--active" href="#">Home</a>
+            <a class="footer-bottom__link" href="index.html">Home</a>
           </li>
           <li class="footer-bottom__item footer-bottom__slash">
-            <a class="footer-bottom__link" href="#">About</a>
+            <a class="footer-bottom__link" href="page.html">About</a>
           </li>
           <li class="footer-bottom__item footer-bottom__slash">
             <a class="footer-bottom__link" href="#">Blog</a>
