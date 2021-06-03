@@ -1441,6 +1441,244 @@
     font-size: 15px;
   }
 }
+.shop-content{
+  &__inner--list{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 75px;
+    margin: 0 0 0 30px;
+    position: absolute;
+    z-index: -1;
+  }
+  &__item--row{
+    margin: 0 0 40px 0;
+    padding: 0;
+    flex-direction: row;
+    max-width: 100%;
+    box-shadow: none;
+    img{
+      max-height: 500px;
+      height: 100%;
+      object-fit: cover;
+    }
+    .products-content__choice{
+      display: none;
+    }
+    .products-content__inner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 370px;
+      width: 100%;
+      min-height: 500px;
+      display: none;
+    }
+    .products-content__info{
+      margin: 0 0 0 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      display: none;
+    }
+  }
+  &__btn{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+  }
+  &__line-row{
+    width: 21px;
+    height: 21px;
+    fill: #a3bbc8;
+    transition: all .5s;
+    &:hover{
+      fill: $default;
+    }
+  }
+  &__line-column{
+    width: 28px;
+    height: 21px;
+    fill: #a3bbc8;
+    transition: all .5s;
+    &:hover{
+      fill: $default;
+    }
+  }
+  &__btn--active{
+    svg{
+      fill: $default;
+    }
+  }
+  &__line-column--active{
+    fill: $default;
+  }
+  
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
+  &__item{
+    margin-left: 30px;
+    margin-bottom:35px ;
+    min-width: 270px;
+    text-align: center;
+  }
+}
+
+.card__products{
+  display: flex;
+  margin-bottom: 40px;
+  &-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 370px;
+    width: 100%;
+    min-height: 500px;
+    background-color: #fefefe;
+    box-shadow: 0px 0px 1px 3px rgba(242,242,242,60%);
+    padding-bottom: 75px;
+    margin: 0 0 0 30px;
+    cursor: pointer;
+    img{
+      max-height: 500px;
+      height: 100%;
+      object-fit: cover;
+      margin-top: 55px;
+    }
+  }
+  &-subtitle{
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  &-price{
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  &-info{
+    margin: 0 0 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  &-text{
+    font-size: 16px;
+    line-height: 30px;
+    color: $default;
+    margin-bottom: 30px;
+    display: block;
+  }
+  &-icons{
+    display: flex;
+    margin-left: 0;
+  }
+  &-icon{
+    font-size: 0;
+    margin-right: 12px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 47px 3px rgba( 37, 37, 37, 0.05);
+  }
+  button{
+    padding: 0;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    &:hover{
+      display: flex;
+      justify-content: center;
+      width: 48%;
+      font-size: 15px;
+      color: white;
+      background-color: #a3bbc8;
+      padding: 10px 0;
+      border-radius: 5px;
+      text-transform: uppercase;
+      svg{
+        display: none;
+      }
+    }
+  }
+  .cart-product{
+    fill: #a3bbc8;
+    width: 22px;
+    height: 20px;
+    margin-top: 10px;
+  }
+  .heart-product{
+    width: 22px;
+    height: 18px;
+    fill: #a3bbc8;
+    margin-top: 10px;
+  }
+}
+.pagination{
+  &__column{
+    display: flex;
+    justify-content: start;
+    margin-left: 29px;
+    margin-top: 75px;
+    padding-bottom: 20px;
+  }
+  &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+  &__link{
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #243f4d;
+    border: 1px solid #a3bbc8;
+    transition: all .5s;
+    &:hover{
+      color: white;
+      background-color: #a3bbc8;
+    }
+  }
+  &__link--active{
+    color: white;
+    background-color: #a3bbc8;
+  }
+  &__link--arrow{
+    padding: 0 20px;
+  }
+}
+.pagination__item+.pagination__item {
+  margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.card__products-none{
+  display: none;
+}
+.star-list{
+  margin-bottom: 30px;
+}
 .star{
   padding: 0;
   margin-bottom: 5px;
@@ -1490,26 +1728,6 @@
 .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
  display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
