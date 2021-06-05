@@ -38,6 +38,8 @@ $(function () {
     $('.pagination').removeClass('pagination__column')
   });
 
+  $('.product-detalis__num').styler();
+
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     onStart: function (data) {
@@ -68,12 +70,26 @@ $(function () {
     readOnly: true,
   });
 
+  $(".detalis-star").rateYo({
+    rating: 3.6,
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    spacing: "13px",
+    readOnly: true,
+  });
+  
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
     fade: true,
     autoplay: true,
     autoplaySpeed: 3000
+  });
+
+  $('.related__products-slider').slick({
+    slidesToShow: 4,
+    draggable: false,
   });
   
 });
