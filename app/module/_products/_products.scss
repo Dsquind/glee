@@ -1,0 +1,212 @@
+.products{
+  padding: 68px 0 93px;
+  &-top{
+    text-align: center;
+  }
+  &-top__filter{
+    margin-bottom: 80px;
+  }
+  &-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
+    margin-bottom: 93px;
+    text-align: center;
+  }
+  &-content__item{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px 35px;
+    max-width: 270px;
+    max-height: 380px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 6px 47px 3px #dae4e9;
+  }
+  &-content__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+  }
+  &-search{
+    width: 20px;
+    height: 20px;
+    fill: #a3bbc8;
+    position: relative;
+    top: 13px;
+    left: 12px;
+  }
+  &-content__link::before{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 50%);
+    transition: background-color 0.3s;
+  }
+  &-content__link:hover::before{
+    background-color: #a3bbc8;
+  }
+  &-content__link:hover svg{
+    fill: white;
+  }
+
+  &-content__btn{
+    margin: 0 0 0 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+
+  }
+  &-content__btn::before{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 50%);
+    transition: background-color 0.3s;
+  }
+  &-content__btn:hover::before{
+    background-color: #a3bbc8;
+  }
+  &-content__btn:hover svg{
+    fill: white;
+  }
+
+  &-coat{
+    width: 22px;
+    height: 20px;
+    fill: #a3bbc8;
+    position: relative;
+    top: 13px;
+    left: 12px;
+  }
+  &-like{
+    width: 22px;
+    height: 18px;
+    fill: #a3bbc8;
+    position: relative;
+    top: 13px;
+    left: 12px;
+  }
+  
+  &-content__choice{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    max-width: 200px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    transform: translateY(250%);
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+
+  &-content__inner:hover{
+    .products-content__choice{
+     transform: translateY(-95%);
+    }
+    .products-content__img{
+      cursor: pointer;
+    }
+  }
+  &-content__info{
+    margin-top: 50px;
+  }
+  &-content__subtitle{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    @extend %dmsans-500;
+  }
+  &-content__price{
+    font-size: 16px;
+    line-height: 20px;
+    color: #a3bbc8;
+    @extend %dmsans-700;
+  }
+}
+
+.products-bottom{
+  padding-top: 83px;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    max-width: 870px;
+    width: 100%;
+    min-height: 390px;
+    background-color: #feefe2
+  }
+  &__image{
+    position: relative;
+  }
+  &__lamp{
+    position: absolute;
+    bottom: 94px;
+    left: 140px;
+    max-width: 300px;
+    max-height: 400px;
+    height: 100%;
+  }
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+  &__left{
+    margin: 100px 145px 90px 0;
+  }
+  &__right{
+    margin: 71px 110px 90px 0;
+  }
+  &__title{
+    font-size: 26px;
+    @extend %dmsans-700;
+    margin-bottom: 25px;
+  }
+  &__text{
+    font-size: 16px;
+  }
+  &__link{
+    font-size: 15px;
+    line-height: 12px;
+    color: $main;
+    background-color: transparent;
+    border: 1px solid #b3b7b5;
+    max-width: 180px;
+    border-radius: 5px;
+    padding: 18px;
+    @extend %rubik-500;
+    margin-top: 30px;
+    position: relative;
+    transition: all .5s;
+  }
+
+  &__link:hover{
+   background-color: $cream;
+   box-shadow: 2px 2px 2px 2px rgba(73, 66, 66, 0.05);
+   border: 1px solid $cream;
+  }
+  &__arrows{
+    position: absolute;
+    width: 22px;
+    height: 9px;
+    fill: #243f4d;
+    top: 19px;
+    right: 18px;
+  }
+ 
+}
