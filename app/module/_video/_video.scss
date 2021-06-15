@@ -64,3 +64,9 @@
     fill: white;
   }
 }
+
+@media (max-width: 860px){
+  .video{
+    display: none;
+  }
+}

@@ -149,3 +149,33 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: 1200px){
+  .articles__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .articles__item{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 860px){
+  .articles__items{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .articles__item{
+    margin: 0 auto;
+  }
+  .partners__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+  .partners__items-img {
+    max-width: 80px;
+    max-height: 80px;
+    margin: 0 auto;
+  }
+}

@@ -78,3 +78,21 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 1200px){
+  .top-design__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top-design__item{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 860px){
+  .top-design__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .top-design__item{
+    margin: 0 auto;
+  }
+}

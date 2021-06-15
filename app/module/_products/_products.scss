@@ -208,5 +208,31 @@
     top: 19px;
     right: 18px;
   }
- 
+}
+
+@media (max-width: 1200px){
+  .products-content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .products-bottom{
+    display: none;
+  }
+}
+
+@media (max-width: 860px){
+  .products-content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .products-content__item{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px){
+  .products-content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .products-content__item{
+    margin: 0 auto;
+  }
 }
