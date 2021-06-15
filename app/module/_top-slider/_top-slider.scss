@@ -1,0 +1,142 @@
+.top-slider{
+  background-color: $cream;
+  max-width: 1770px;
+  margin: 0 auto;
+  padding: 190px 15px 0 15px;
+  position: relative;
+  &__inner::before{
+    content: '';
+    position: absolute;
+    max-width: 634px;
+    width: 115%;
+    max-height: 634px;
+    height: 115%;
+    top: -120px;
+    right: -10%;
+    border-radius: 50%;
+    background: linear-gradient(270deg
+    , #fff 0%, rgba(255,255,255,0.5) 31.64%, rgba(255,255,255,0.222586) 74.35%, rgba(255,255,255,0) 99.87%);
+  }
+  &__item{
+    display: flex !important;
+  }
+  &__title{
+    max-width: 530px;
+    font-size: 72px;
+    line-height: 70px;
+    @extend %rubik-500;
+    margin-bottom: 30px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 370px;
+    margin-bottom: 40px;
+    color: $main;
+    @extend %rubik-400;
+  }
+  &__link{
+    font-size: 15px;
+    line-height: 12px;
+    color: white;
+    padding:22px 100px 22px 30px;
+    background-color: #a3bbc8;
+    @extend %rubik-500;
+    position: relative;
+    outline: none;
+    transition: all 0.3s;
+    &:hover{
+      background-color: $main;
+    }
+  }
+  &__img{
+    margin: 55px 0 150px 0;
+  }
+  &__now{
+    position: absolute;
+    width: 22px;
+    height: 9px;
+    top: 27px;
+    right: 19px;
+    path{
+      fill: white;
+    }
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+      button{
+        padding: 0;
+        font-size: 12px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: none;
+        background-color: #fde3cc;
+        color: #667983;
+        margin-right: 11px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        outline: none;
+        @extend %rubik-500;
+        transition: all .3s;
+        &:hover{
+          background-color: white;
+          color: $default;
+        }
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px){
+   .top-slider{
+    &__inner::before{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1200px){
+   .top-slider{
+    &__inner::before{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 960px){
+  .top-slider{
+    &__img{
+      width: 50%;
+    }
+    &__title{
+      font-size: 36px;
+      margin: 0;
+    }
+    &__text{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 790px){
+  .top-slider{
+    img{
+      display: none;
+    }
+    &__content{
+      margin-bottom: 30px;
+    }
+    &__title{
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+}

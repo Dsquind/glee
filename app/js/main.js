@@ -1,6 +1,11 @@
 $(function () {
 
 
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+
   $('.shop-content__btn').on('click', function () {
     $('.shop-content__btn').removeClass('shop-content__btn--active');
     $(this).addClass('shop-content__btn--active');

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/mm.min.css">
+</head>
+<body>
+  
+ {% include 'app/module/_header/_header.html' %}
+  <main class="main">
+    {% include 'app/module/_top/_top.html' %}
+
+    
+
+    <div class="partners partners__nonnews">
+      <div class="container">
+        <div class="partners__items">
+          <img class="partners__items-img" src="images/partners/item1.png" alt="logo partners">
+          <img class="partners__items-img" src="images/partners/item2.png" alt="logo partners">
+          <img class="partners__items-img" src="images/partners/item3.png" alt="logo partners">
+          <img class="partners__items-img" src="images/partners/item4.png" alt="logo partners">
+          <img class="partners__items-img" src="images/partners/item5.png" alt="logo partners">
+        </div>
+      </div>
+    </div>
+  </main>
+  {% include 'app/module/_footer/_footer.html' %}
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>
